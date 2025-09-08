@@ -1,0 +1,377 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+<<<<<<< HEAD
+/* Driver Section */
+.driver-container {
+    display: flex;
+    gap: 10px;  /* Reduce space between search box and driver box */
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Search Box */
+.search-container {
+    width: 25%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.scroll-box {
+    height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+/* Scrollbar Styling */
+.scroll-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Driver List */
+.drivers {
+    width: 73%; /* Make the driver box larger */    
+=======
+.f1-cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.f1-cars ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.f1-cars li {
+    list-style: none;
+    width: 48%; /* Allows two items per row */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.f1-cars li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.f1-cars li div {
+    text-align: center;
+}
+
+.f1-cars li strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.f1-cars li p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Centering the F1 Cars Over the Years title */
+.f1-cars h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Car Technology Section */
+.car-technology {
+    background: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-technology h3 {
+    color: #1c1c1c;
+    margin-bottom: 15px;
+}
+
+.car-technology p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.driver-list {
+    margin-bottom: 50px;
+}
+
+.drivers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+>>>>>>> 02af7e9 (Node.js set up with basic database interaction test)
+}
+
+.driver {
+    display: flex;
+    gap: 20px;
+<<<<<<< HEAD
+    background-color: #fff;
+    padding: 30px; /* Increase padding to make the box bigger */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+    flex-direction: row; /* Ensure items are stacked vertically */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.driver-img {
+    width: 130px;  /* Increase driver image size */
+    height: 130px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.driver-name {
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.driver-name:hover {
+    background-color: #ffcc00;
+    color: #000;
+=======
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.driver img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.driver-info h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.driver-info p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.driver-info strong {
+    font-weight: 600;
+}
+
+.races {
+    text-align: center;
+}
+
+.races h2 {
+    font-size: 2.5em;
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+/* Race Grid Layout */
+.race-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.race {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.race img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.race-description {
+    flex: 1;
+}
+
+.race-description h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.race-description p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.race-description strong {
+    font-weight: 600;
+}
+
+.championships {
+    text-align: center;
+}
+
+.championships h2 {
+    font-size: 2.5em;
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+/* Championship Grid Layout */
+.championship-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.championship {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.championship img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.championship-description {
+    flex: 1;
+}
+
+.championship-description h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.championship-description p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.championship-description strong {
+    font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+>>>>>>> 02af7e9 (Node.js set up with basic database interaction test)
+}

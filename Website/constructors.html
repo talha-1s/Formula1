@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Constructors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="constructors.js" defer></script>
+    <script src="WikiMediaApi.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Formula 1 Fan Zone</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="drivers.html">Drivers</a></li>
+                    <li><a href="circuits.html">circuits</a></li>
+                    <li><a href="constructors.html">Constructors</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="driver-container">
+            <div class="search-container">
+                <input type="text" class="search-bar" id="search-input" placeholder="Search...">
+                <div class="scroll-box" id="scroll-box">
+                    <!-- Constructors will be dynamically added here -->
+                </div>
+            </div>
+
+            <div class="drivers">
+                <div class="driver">
+                    <img id="driver-img" src="" alt="Driver Image" width="200">
+                    <div class="driver-info">
+                        <h3 id="Dname">Mclaren</h3>
+                        <p id="Dnationality"><strong>Nationality:</strong> British</p>
+                        <p id="Drdescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Formula 1 Fan Zone | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof fetchDrivers === "function") {
+                fetchDrivers();
+            } else {
+                console.error("fetchDrivers is not defined. Ensure it's loaded correctly.");
+            }
+        });
+    </script>
+</body>
+</html>

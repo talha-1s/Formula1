@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Data</title>
+<<<<<<< HEAD
+    <script src="getfunctions.js" defer></script> <!-- Correctly linking JS file -->
+=======
+>>>>>>> 02af7e9 (Node.js set up with basic database interaction test)
+</head>
+<body>
+    <h1>Drivers List</h1>
+    <ul id="drivers-list"></ul>
+
+    <script>
+<<<<<<< HEAD
+        // Ensure the function is available before calling it
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof fetchDrivers === "function") {
+                fetchDrivers();
+            } else {
+                console.error("fetchDrivers is not defined. Check if getfunctions.js is correctly linked.");
+            }
+        });
+=======
+        async function fetchDrivers() {
+            const response = await fetch('http://localhost:3000/api/drivers');
+            const data = await response.json();
+            const list = document.getElementById('drivers-list');
+
+            data.forEach(driver => {
+                const item = document.createElement('li');
+                item.textContent = `${driver.forename} ${driver.surname}`;
+                list.appendChild(item);
+            });
+        }
+
+        fetchDrivers();
+>>>>>>> 02af7e9 (Node.js set up with basic database interaction test)
+    </script>
+</body>
+</html>
